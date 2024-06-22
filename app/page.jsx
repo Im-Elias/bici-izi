@@ -1,4 +1,4 @@
-import PopularBikes from "@/components/PopularBikes";
+import PopularBikes from "../components/PopularBikes";
 
 export default function Home() {
   return (
