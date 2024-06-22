@@ -1,10 +1,10 @@
 "use client";
 import CartItem from "./CartItem";
-import CheckoutBtn from "./CheckOutBtn";
 
 import { useShoppingCart } from "use-shopping-cart";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet";
 import { ScrollArea } from "./ui/scroll-area";
+import CheckoutBtn from "./CheckoutBtn";
 
 const CartSideBar = () => {
   const {

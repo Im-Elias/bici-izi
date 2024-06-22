@@ -62,7 +62,7 @@ const ProductDetails = async ({ params }) => {
                 description={bike.description}
                 images={bike.image}
                 price={bike.price}
-                id={bike.id}
+                id={bike._id}
                 text="Añadir al carro"
                 btnStyles="btn btn-accent"
               />
