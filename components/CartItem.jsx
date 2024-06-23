@@ -4,6 +4,7 @@ import { useShoppingCart } from "use-shopping-cart";
 import { FaPlus, FaMinus, FaX } from "react-icons/fa6";
 
 const CartItem = ({ item }) => {
+  console.log(item);
   const { removeItem, incrementItem, decrementItem } = useShoppingCart();
 
   return (

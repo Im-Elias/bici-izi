@@ -17,7 +17,7 @@ const getData = async (slug) => {
     image,
     price,
     price_id,
-     name,
+    name,
     description,
     "slug": slug.current,
     "category": categories->{name},
@@ -62,7 +62,6 @@ const ProductDetails = async ({ params }) => {
                 description={bike.description}
                 images={bike.image}
                 price={bike.price}
-                id={bike._id}
                 text="Añadir al carro"
                 btnStyles="btn btn-accent"
               />

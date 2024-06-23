@@ -1,6 +1,8 @@
 import { useShoppingCart } from "use-shopping-cart";
 
 const CheckoutBtn = () => {
+  const { redirectToCheckout } = useShoppingCart();
+
   const handleCheckout = async () => {
     try {
       const res = await redirectToCheckout();
@@ -11,7 +13,6 @@ const CheckoutBtn = () => {
       console.log(error);
     }
   };
-  const { redirectToCheckout } = useShoppingCart();
 
   return (
     <button className="btn btn-primary w-full" onClick={handleCheckout}>
