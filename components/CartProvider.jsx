@@ -8,8 +8,8 @@ const CartProvider = ({ children }) => {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY}
-      successUrl="http://localhost:3000/stripe/success"
-      cancelUrl="http://localhost:3000/stripe/error"
+      successUrl="https://bici-izi.vercel.app/stripe/success" // TODO: localhost cuando se testea localmente
+      cancelUrl="https://bici-izi.vercel.app/stripe/error" // TODO: localhost cuando se testea localmente
       language="en-US"
       currency="USD"
       billingAddressCollection={true}
